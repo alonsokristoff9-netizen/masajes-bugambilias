@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masajes Bugambilias</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f6fbf7;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(120deg, #b7e4c7, #d8f3dc);
+    padding: 40px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #2d6a4f;
+}
+
+header p {
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+/* NAV */
+nav {
+    background: white;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+nav a {
+    margin: 15px;
+    text-decoration: none;
+    color: #2d6a4f;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #52b788;
+}
+
+/* HERO */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background: rgba(0,0,0,0.3);
+    padding: 20px 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    margin: 15px auto;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* PRECIOS */
+.precios {
+    background: #e9f5ec;
+}
+
+/* BOTON */
+.btn {
+    background: #25D366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1ebe5d;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background: #2d6a4f;
+    color: white;
+    padding: 20px;
+}
+
+/* ANIMACION */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Masajes Bugambilias</h1>
+    <p>Relajación total para cuerpo y mente</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#precios">Precios</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="hero">
+    <img src="playa.jpg">
+    <div class="hero-text">
+        <h2>Relájate frente al mar</h2>
+    </div>
+</div>
+
+<section id="inicio">
+    <h2>Bienvenido</h2>
+    <div class="card">
+        <p>Disfruta de una experiencia única de relajación en un ambiente tranquilo.</p>
+        <p><strong>Ubicación:</strong> Playa Tranquila, Jalisco</p>
+        <p>Servicio 100% enfocado en masajes.</p>
+    </div>
+</section>
+
+<section id="precios" class="precios">
+    <h2>Precios</h2>
+
+    <div class="card">💆‍♂️ 30 minutos — $500</div>
+    <div class="card">💆‍♂️ 60 minutos — $800</div>
+    <div class="card">💆‍♂️ 90 minutos — $1200 (solo o pareja)</div>
+    <div class="card">💆‍♂️ Pareja 60 minutos — $1400</div>
+
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+
+    <div class="card">
+        <p>📞 322 220 7882</p>
+        <p>Disponible en WhatsApp</p>
+
+        <a class="btn" href="https://wa.me/523222207882" target="_blank">
+            Agendar cita
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Masajes Bugambilias</p>
+</footer>
+
+</body>
+</html>
